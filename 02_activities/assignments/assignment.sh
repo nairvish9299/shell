@@ -14,7 +14,7 @@ touch README.md
 touch analysis/main.py
 
 # download client data
-wget -O rawdata.zip https://github.com/UofT-DSI/shell/raw/refs/heads/main/02_activities/assignments/rawdata.zip
+#wget -O rawdata.zip https://github.com/UofT-DSI/shell/raw/refs/heads/main/02_activities/assignments/rawdata.zip
 unzip rawdata.zip
 
 ###########################################
@@ -29,7 +29,7 @@ ls ./data/raw
 # 4. In ./data/processed, create the following directories: server_logs, user_logs, and event_logs
 mkdir ./data/processed ./data/processed/server_logs ./data/processed/user_logs ./data/processed/event_logs
 # 5. Copy all server log files (files with "server" in the name AND a .log extension) from ./data/raw to ./data/processed/server_logs
-cp ./raw/*server*.log ./processed/server_logs/
+cp .data/raw/*server*.log .data/processed/server_logs/
 # 6. Repeat the above step for user logs and event logs
 cp ./data/processed/raw/*user*.log ./data/processed/user_logs/
 cp ./data/processed/raw/*event*.log ./data/processed/event_logs/
