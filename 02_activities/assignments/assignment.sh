@@ -37,10 +37,8 @@ cp ./data/raw/*event*.log ./data/processed/event_logs/
 rm ./data/raw/*ipaddr*.log
 rm ./data/processed/user_logs/*ipaddr*.log
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
-touch ./data/processed/inventory.txt
-ls ./data/processed/user_logs/>>./data/inventory.txt 
-ls ./data/processed/server_logs/>>./data/inventory.txt
-ls ./data/processed/event_logs/>>./data/inventory.txt
+find ./data/processed/>./data/inventory.txt 
+
 
 ###########################################
 
